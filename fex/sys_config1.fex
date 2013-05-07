@@ -954,7 +954,7 @@ kp_out7                  = port:PH27<4><1><default><default>
 ;---       USB0控制标志
 ;--------------------------------
 [usbc0]
-usb_used                 = 1
+usb_used                 = 0
 usb_port_type            = 2
 usb_detect_type          = 1
 usb_id_gpio              = port:PH4<0><1><default><default>
