@@ -20,17 +20,20 @@ int main(int argc, char const *argv[])
 	}
 	
 	if(argc < 3){
-		printf("PWM signal generator\nusage: %s freq(1-100000 Hz) duty(%%)\n", argv[0]);
+		printf("PWM signal generator\nusage: %s freq(196-100000 Hz) duty(%%)\n", argv[0]);
 		return 1;
 	}
 	hz = atoi(argv[1]);
 	duty = atoi(argv[2]);
-	if(hz > 100000 || hz <= 0 || duty > 100 || duty < 0)
+	if(hz > 100000 || hz <= 195 || duty > 100 || duty < 0)
 		return 1;
-	if(hz < 10){
+	if(hz < 261){
 		prescalar = 4; //div 480
 		period = 50*1000/hz;
-	}else if(hz < 2000){
+	}else if(hz < 392){
+		prescalar = 3; //div 360
+		period = 66666/hz;
+	}else if(hz < 786){
 		prescalar = 2; //div 240
 		period = 100*1000/hz;
 	}else{
