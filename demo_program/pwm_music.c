@@ -48,6 +48,7 @@ int main(int argc, char const *argv[])
 	for(i=0; note[i][0]!=-1; i++){
 		if(note[i][1] == 0){
 			duty = 0;
+			printf("pwm: rest %dms\n", note[i][0]);
 		}else{
 			duty = 50;
 			hz = NotenumToHz(note[i][1]);
@@ -55,8 +56,8 @@ int main(int argc, char const *argv[])
 				printf("Invalid Tone\n");
 				continue;
 			}
+			printf("pwm: %dHz %dms\n", hz, note[i][0]);
 		}
-		printf("pwm: %d %d\n", hz, duty);
 		if(hz < 261){
 			prescalar = 4; //div 480
 			period = 50*1000/hz;
