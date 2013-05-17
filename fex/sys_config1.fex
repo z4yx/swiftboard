@@ -1131,11 +1131,9 @@ compass_int              = port:PI13<6><1><default><default>
 [bt_para]
 bt_used                  = 1
 bt_uart_id               = 2
-bt_mod_type              = 0
-bt_wakeup				 = port:PH19<1><default><default><0>  
-bt_gpio				     = port:PA06<1><default><default><0>
-bt_rst					 = port:PH23<1><default><default><0>
-bt_host_wakeup		     = port:PH21<6><default><default><0>
+bt_wakeup				 = port:PH23<1><default><default><1>  
+;bt_gpio				 = port:PH22<1><default><default><1>
+;bt_rst					 = port:PB5<1><default><default><0>
 
 [i2s_para]
 i2s_used                 = 0
