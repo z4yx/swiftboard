@@ -1,6 +1,7 @@
 # Aliases extracted from modules themselves.
 alias platform:mali_drm mali_drm
 alias platform:sw_ahci sw_ahci_platform
+alias spi:spidev spidev
 alias usb:v0BDAp8186d*dc*dsc*dp*ic*isc*ip* 8192cu
 alias usb:v0E66p0019d*dc*dsc*dp*ic*isc*ip* 8192cu
 alias usb:v0846p9021d*dc*dsc*dp*ic*isc*ip* 8192cu
@@ -60,8 +61,8 @@ alias usb:v0BDAp817Ad*dc*dsc*dp*ic*isc*ip* 8192cu
 alias usb:v0BDAp817Ed*dc*dsc*dp*ic*isc*ip* 8192cu
 alias usb:v0BDAp8170d*dc*dsc*dp*ic*isc*ip* 8192cu
 alias usb:v0BDAp8176d*dc*dsc*dp*ic*isc*ip* 8192cu
-alias usb:v0BDAp8179d*dc*dsc*dp*ic*isc*ip* 8192cu
 alias usb:v0BDAp8191d*dc*dsc*dp*ic*isc*ip* 8192cu
+alias usb:v0BDAp8179d*dc*dsc*dp*ic*isc*ip* 8188eu
 alias usb:v0AF0pC100d*dc*dsc*dp*ic*isc*ip* hso
 alias usb:v0AF0pD058d*dc*dsc*dp*ic*isc*ip* hso
 alias usb:v0AF0pD357d*dc*dsc*dp*ic*isc*ip* hso
