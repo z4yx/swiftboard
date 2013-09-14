@@ -1326,3 +1326,15 @@ gpio_pin_3 = port:PI6<1>
 gpio_pin_4 = port:PI7<1>
 gpio_pin_5 = port:PI8<1>
 gpio_pin_6 = port:PI9<1>
+
+[leds_para]
+leds_used = 1
+leds_num = 2
+leds_pin_1 = port:PH24<1><default><default><0>
+leds_name_1 = "ph24:red:led1"
+leds_trigger_1 = "mmc0"
+leds_inverted_1 = 1
+leds_pin_2 = port:PH25<1><default><default><0>
+leds_name_2 = "ph25:red:led2"
+leds_trigger_2 = "heartbeat"
+leds_inverted_2 = 1
