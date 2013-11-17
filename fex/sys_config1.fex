@@ -1338,3 +1338,8 @@ leds_pin_2 = port:PH25<1><default><default><0>
 leds_name_2 = "ph25:red:led2"
 leds_trigger_2 = "heartbeat"
 leds_inverted_2 = 1
+
+[pwm1_para]
+pwm_used = 1
+pwm_period = 10000
+pwm_duty_percent = 50
